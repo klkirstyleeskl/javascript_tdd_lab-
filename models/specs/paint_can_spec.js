@@ -22,4 +22,10 @@ describe('Paint Can', function(){
     assert.strictEqual(actual, 0)
   });
 
+  it('should check if emptied', function(){
+    paintCan.empty()
+    const actual = paintCan.checkEmpty();
+    assert.strictEqual(actual, true)
+  });
+
 });

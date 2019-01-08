@@ -16,7 +16,10 @@ describe('Paint Can', function(){
     assert.strictEqual(actual, false)
   });
 
-//   it('should be able to empty', function(){
-//     const actual
-//   })
+  it('should be able to empty', function(){
+    paintCan.empty()
+    const actual = paintCan.volume;
+    assert.strictEqual(actual, 0)
+  });
+
 });
